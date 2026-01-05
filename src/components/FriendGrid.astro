@@ -2,30 +2,29 @@
 
 ---
 
-<div class="layout-grid">
+<div class="friend-grid">
     <slot name="left" />
     <slot name="right" />
 </div>
 
 <style>
-    .layout-grid {
+    .friend-grid {
         position: relative;
         align-items: start;
-        align-content: stretch;
         display: grid;
         gap: 2rem;
-        grid-template-columns: 2fr 5fr;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         grid-template-rows: auto;
     }
 
     @media screen and (max-width: 1380px) {
-        .layout-grid {
+        .friend-grid {
             grid-template-columns: 1fr;
         }
     }
 
     @media screen and (max-width: 640px) {
-        .layout-grid {
+        .friend-grid {
             margin: 0 1rem;
             gap: 1rem;
         }

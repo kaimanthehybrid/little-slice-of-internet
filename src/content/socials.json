@@ -1,11 +1,56 @@
 [
-	{
-		"id": 1,
-		"icon": {
-			"type": "lucide",
-			"name": "github"
-		},
-		"text": "GitHub",
-		"link": "https://github.com/louisescher/spectre"
-	}
+  {
+    "id": 1,
+    "icon": {
+      "type": "lucide",
+      "name": "twitch"
+    },
+    "text": "Twitch",
+    "link": "https://www.twitch.tv/kaimanthehybrid"
+  },
+  {
+    "id": 2,
+    "icon": {
+      "type": "lucide",
+      "name": "youtube"
+    },
+    "text": "YouTube",
+    "link": "https://www.youtube.com/@KaimanTheHybrid"
+  },
+  {
+    "id": 3,
+    "icon": {
+      "type": "simple-icons",
+      "name": "bluesky"
+    },
+    "text": "BlueSky",
+    "link": "https://www.bsky.app/profile/kaimanthehybrid.bsky.social"
+  },
+  {
+    "id": 4,
+    "icon": {
+      "type": "lucide",
+      "name": "twitter"
+    },
+    "text": "Twitter",
+    "link": "https://www.x.com/KaimanTheHybrid"
+  },
+  {
+    "id": 5,
+    "icon": {
+      "type": "lucide",
+      "name": "github"
+    },
+    "text": "GitHub",
+    "link": "https://www.github.com/kaimanthehybrid"
+  },
+  {
+    "id": 6,
+    "icon": {
+      "type": "lucide",
+      "name": "asterisk"
+    },
+    "text": "getlit!",
+    "link": "https://www.getlit.me/"
+  }
 ]

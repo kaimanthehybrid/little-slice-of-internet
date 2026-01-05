@@ -1,0 +1,24 @@
+.layout-grid-list {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+}
+
+/* eventually I want to make code that will take in a list of a name, pfp, website link, and a blurb and automatically make a card for them. */
+
+@media screen and (max-width: 640px) {
+    .layout-grid-list {
+        gap: 1rem;
+    }
+}
+
+.flex-col-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-item {
+    justify-content: center;
+}

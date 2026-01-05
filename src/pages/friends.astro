@@ -1,0 +1,125 @@
+---
+import "../styles/friends.css";
+
+import { getCollection } from "astro:content";
+import { openGraph } from "spectre:globals";
+import Card from "../components/Card.astro";
+import Icon from "../components/Icon.astro";
+import ImageGlow from "../components/ImageGlow.astro";
+import ProfilePicture from "../assets/kaiman.png";
+import FriendLayout from "../layouts/FriendLayout.astro";
+---
+
+<!-- TO-DO: Create a system to dynamically create a card and add it to a list
+(probably to be done in either TypeScript or Astro) -->
+<FriendLayout title={"Friends"} pagefindIgnore>
+    <div class="layout-grid-list" slot="left">
+        <Card class="flex-col-card">
+            <ImageGlow
+                quality={100}
+                width={120}
+                height={120}
+                src="/src/assets/aured.png"
+                alt="A smiling blue panda staring at the camera!"
+                loading="eager"
+            />
+            <a href="https://pandaau.red/">
+                <h2>Aured</h2>
+            </a>
+
+            <ul class="overview-list">
+                <li>
+                    <span class="center-item"
+                        >A wonderful blue panda who has a penchant for transit,
+                        mathematics, and computer science.</span
+                    >
+                </li>
+            </ul>
+        </Card>
+        <Card class="flex-col-card">
+            <ImageGlow
+                quality={100}
+                width={120}
+                height={120}
+                src={ProfilePicture}
+                alt="Placeholder"
+                loading="eager"
+            />
+            <a href="https://asher.dog/">
+                <h2>Asher</h2>
+            </a>
+            <ul class="overview-list">
+                <li>
+                    <span
+                        >A modern day renaissance man who does everything from
+                        software to hardware to photography!</span
+                    >
+                </li>
+            </ul>
+        </Card>
+        <Card class="flex-col-card">
+            <ImageGlow
+                quality={100}
+                width={120}
+                height={120}
+                src="/src/assets/moondog.png"
+                alt="Moondog."
+                loading="eager"
+            />
+            <a href="https://dog-game.xyz/">
+                <h2>Mica Moondog</h2>
+            </a>
+            <ul class="overview-list">
+                <li>
+                    <span
+                        >A longtime friend who's talent, tenacity, and whimsy
+                        precedes them. Hi, they're Moondog!</span
+                    >
+                </li>
+            </ul>
+        </Card>
+        <Card class="flex-col-card">
+            <ImageGlow
+                quality={100}
+                width={120}
+                height={120}
+                src="/src/assets/schwank.png"
+                alt="A furred dragon fish that is looking cutely at you."
+                loading="eager"
+            />
+            <a href="https://schwankmoment.neocities.org/">
+                <h2>Schwank</h2>
+            </a>
+            <ul class="overview-list">
+                <li>
+                    <span
+                        >A musical anomaly who lives, thrives, and creates
+                        beauty out of chaos. Also has a cute as fuck sona!</span
+                    >
+                </li>
+            </ul>
+        </Card>
+        <Card class="flex-col-card">
+            <ImageGlow
+                quality={100}
+                width={120}
+                height={120}
+                src="/src/assets/blueberry.webp"
+                alt="Placeholder"
+                loading="eager"
+            />
+            <a href="https://blueberry.coffee/">
+                <h2>Blueberry</h2>
+            </a>
+            <ul class="overview-list">
+                <li>
+                    <span
+                        >Another long time friend who is a Swiss army knife of
+                        talent. He has limitless potential, and there is not a
+                        single thing they cannot do.</span
+                    >
+                </li>
+            </ul>
+        </Card>
+    </div>
+</FriendLayout>

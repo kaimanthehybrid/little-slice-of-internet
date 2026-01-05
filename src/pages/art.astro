@@ -1,0 +1,37 @@
+---
+import "../styles/friends.css";
+
+import { getCollection } from "astro:content";
+import { openGraph } from "spectre:globals";
+import Card from "../components/Card.astro";
+import Icon from "../components/Icon.astro";
+import ImageGlow from "../components/ImageGlow.astro";
+import ProfilePicture from "../assets/kaiman.png";
+import FriendLayout from "../layouts/FriendLayout.astro";
+---
+
+<!-- TO-DO: Create a system to dynamically create a card and add it to a list
+(probably to be done in either TypeScript or Astro) -->
+<FriendLayout title={"Friends"} pagefindIgnore>
+    <div class="layout-grid-list" slot="left">
+        <Card class="flex-col-card">
+            <ImageGlow
+                quality={100}
+                width={120}
+                height={120}
+                src="/src/assets/crabrangoon.jpg"
+                alt="A smiling blue panda staring at the camera!"
+                loading="eager"
+            />
+            <h2>This page is still in the works!</h2>
+
+            <ul class="overview-list">
+                <li>
+                    <span class="center-item"
+                        >Shouldn't be too long though...</span
+                    >
+                </li>
+            </ul>
+        </Card>
+    </div>
+</FriendLayout>
