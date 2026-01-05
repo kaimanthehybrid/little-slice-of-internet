@@ -33,7 +33,7 @@ const config = defineConfig({
       name: "Kaiman the Hybrid!",
       openGraph: {
         home: {
-          title: "crocowolf cove",
+          title: "-- the crocowolf cove",
           description:
             "The superior species for anthropomorphic animals everywhere.",
         },
@@ -53,9 +53,6 @@ const config = defineConfig({
       },
     }),
   ],
-  adapter: node({
-    mode: "standalone",
-  }),
 });
 
 export default config;
