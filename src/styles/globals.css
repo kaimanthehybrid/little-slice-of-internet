@@ -6,7 +6,7 @@
     --primary-light: #26589e;
     --primary-lightest: #c2a8fd;
     --primary-link: #424085;
-    --primary-link-light:#9492d1;
+    --primary-link-light: #9492d1;
 }
 
 .overview-list {
@@ -139,7 +139,6 @@ main {
 .text-glow {
     color: var(--primary);
     filter: drop-shadow(0 0 12px var(--primary));
-    pectre
 }
 
 .block-link {
@@ -148,12 +147,13 @@ main {
 }
 
 .block-link:hover,
-blog: {
-.block-link:focus-visible {
-    color: white;
-    background-color: var(--primary);
-    text-decoration: none;
-    outline: none;
+blog {
+    .block-link:focus-visible {
+        color: white;
+        background-color: var(--primary);
+        text-decoration: none;
+        outline: none;
+    }
 }
 
 @media screen and (max-width: 1380px) {
