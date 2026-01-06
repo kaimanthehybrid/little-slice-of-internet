@@ -10,40 +10,36 @@ const path = Astro.url.pathname;
     <ul>
         <li>
             <a
-                href="/little-slice-of-internet/blog"
+                href="/blog"
                 class:list={{
-                    active: path.startsWith("/little-slice-of-internet/blog"),
+                    active: path.startsWith("/blog"),
                 }}>Blog</a
             >
         </li>
         <li class="nav-separator">/</li>
         <li>
             <a
-                href="/little-slice-of-internet/projects"
+                href="/projects"
                 class:list={{
-                    active: path.startsWith(
-                        "/little-slice-of-internet/projects",
-                    ),
+                    active: path.startsWith("/projects"),
                 }}>Projects</a
             >
         </li>
         <li class="nav-separator">/</li>
         <li>
             <a
-                href="/little-slice-of-internet/friends"
+                href="/friends"
                 class:list={{
-                    active: path.startsWith(
-                        "/little-slice-of-internet/friends",
-                    ),
+                    active: path.startsWith("/friends"),
                 }}>Friends</a
             >
         </li>
         <li class="nav-separator">/</li>
         <li>
             <a
-                href="/little-slice-of-internet/art"
+                href="/art"
                 class:list={{
-                    active: path.startsWith("/little-slice-of-internet/art"),
+                    active: path.startsWith("/art"),
                 }}>Art</a
             >
         </li>
