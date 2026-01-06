@@ -1,5 +1,5 @@
 ---
-import { name, navName } from "spectre:globals";
+import { name } from "spectre:globals";
 import Icon from "./Icon.astro";
 
 const path = Astro.url.pathname;
@@ -9,29 +9,42 @@ const path = Astro.url.pathname;
     <a class="site-title" href="/">Crocowolf's Cove</a>
     <ul>
         <li>
-            <a href="/blog" class:list={{ active: path.startsWith("/blog") }}
-                >Blog</a
+            <a
+                href="/little-slice-of-internet/blog"
+                class:list={{
+                    active: path.startsWith("/little-slice-of-internet/blog"),
+                }}>Blog</a
             >
         </li>
         <li class="nav-separator">/</li>
         <li>
             <a
-                href="/projects"
-                class:list={{ active: path.startsWith("/projects") }}
-                >Projects</a
+                href="/little-slice-of-internet/projects"
+                class:list={{
+                    active: path.startsWith(
+                        "/little-slice-of-internet/projects",
+                    ),
+                }}>Projects</a
             >
         </li>
         <li class="nav-separator">/</li>
         <li>
             <a
-                href="/friends"
-                class:list={{ active: path.startsWith("/friends") }}>Friends</a
+                href="/little-slice-of-internet/friends"
+                class:list={{
+                    active: path.startsWith(
+                        "/little-slice-of-internet/friends",
+                    ),
+                }}>Friends</a
             >
         </li>
         <li class="nav-separator">/</li>
         <li>
-            <a href="/art" class:list={{ active: path.startsWith("/art") }}
-                >Art</a
+            <a
+                href="/little-slice-of-internet/art"
+                class:list={{
+                    active: path.startsWith("/little-slice-of-internet/art"),
+                }}>Art</a
             >
         </li>
         <li class="nav-separator">/</li>
