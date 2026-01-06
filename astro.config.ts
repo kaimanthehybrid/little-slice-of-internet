@@ -2,6 +2,7 @@ import mdx from "@astrojs/mdx";
 import node from "@astrojs/node";
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
+import netlify from "@astrojs/netlify";
 import expressiveCode from "astro-expressive-code";
 import { loadEnv } from "vite";
 import spectre, { type GiscusMapping } from "./package/src";
@@ -9,8 +10,6 @@ import { spectreDark } from "./src/ec-theme";
 
 // https://astro.build/config
 const config = defineConfig({
-  site: "https://kaimanthehybrid.github.io",
-  base: "/little-slice-of-internet",
   output: "static",
   integrations: [
     expressiveCode({
@@ -42,9 +41,7 @@ const config = defineConfig({
       },
     }),
   ],
-  adapter: node({
-    mode: "standalone",
-  }),
+  adapter: netlify(),
 });
 
 export default config;
