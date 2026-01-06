@@ -9,7 +9,7 @@ import { spectreDark } from "./src/ec-theme";
 
 // https://astro.build/config
 const config = defineConfig({
-  site: "https://kaimanthehybrid.github.io",
+  site: "https://kaiman.blue",
   output: "static",
   integrations: [
     expressiveCode({
