@@ -2,6 +2,15 @@
   {
     "id": 1,
     "icon": {
+      "type": "simple-icons",
+      "name": "pronounsdotpage"
+    },
+    "text": "Pronouns.page",
+    "link": "https://en.pronouns.page/@echoedwhispers"
+  },
+  {
+    "id": 2,
+    "icon": {
       "type": "lucide",
       "name": "twitch"
     },
@@ -9,7 +18,7 @@
     "link": "https://www.twitch.tv/kaimanthehybrid"
   },
   {
-    "id": 2,
+    "id": 3,
     "icon": {
       "type": "lucide",
       "name": "youtube"
@@ -18,7 +27,7 @@
     "link": "https://www.youtube.com/@KaimanTheHybrid"
   },
   {
-    "id": 3,
+    "id": 4,
     "icon": {
       "type": "simple-icons",
       "name": "bluesky"
@@ -27,7 +36,7 @@
     "link": "https://www.bsky.app/profile/kaiman.blue"
   },
   {
-    "id": 4,
+    "id": 5,
     "icon": {
       "type": "lucide",
       "name": "twitter"
@@ -36,7 +45,7 @@
     "link": "https://www.x.com/KaimanTheHybrid"
   },
   {
-    "id": 5,
+    "id": 6,
     "icon": {
       "type": "lucide",
       "name": "github"
@@ -45,7 +54,7 @@
     "link": "https://www.github.com/kaimanthehybrid"
   },
   {
-    "id": 6,
+    "id": 7,
     "icon": {
       "type": "lucide",
       "name": "asterisk"
